@@ -1,0 +1,15 @@
+<html>
+<head><title>Jquery</title></head>
+<body>
+<div style="background-color:yellow">
+    <p>Click the button to change the background of the div</p>
+    <button>Click Me!</button>
+</div>
+</body>
+<script src="../../jquery.min.js"></script>
+<script type="application/javascript">
+    $('button').click(function(){
+        $(this).parent('div').css('background-color','red');
+    });
+</script>
+</html>
